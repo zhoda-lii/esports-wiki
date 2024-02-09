@@ -31,7 +31,6 @@
         margin-bottom: 0px;
         margin-left: 0px;
         margin-right: 0px;
-        /* color: #f1b86d; */
         color: rgb(220, 71, 71);
     }
 
@@ -40,7 +39,6 @@
         margin-bottom: 0px;
         margin-left: 0px;
         margin-right: 0px;
-        /* color: #f1b86d; */
         color: rgb(220, 71, 71);
     }
 
@@ -49,8 +47,33 @@
         margin-bottom: 0px;
         margin-left: 0px;
         margin-right: 0px;
-        /* color: #f1b86d; */
         color: rgb(220, 71, 71);
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #S {
+        background-color: rgb(230, 66, 66);
+        padding: 10px;
+    }
+
+    #A {
+        background-color: rgb(247, 166, 14);
+        padding: 10px;
+    }
+
+    #B {
+        background-color: rgb(226, 226, 92);
+        padding: 10px;
+    }
+
+    #C {
+        background-color: rgb(105, 180, 105);
     }
 </style>
 
@@ -105,24 +128,24 @@
                             squads to ensure coordinated teamwork wins a victory.
                         </p>
                         <div class="valimg2">
-                            <img id="img-2" src="./images/valorant/valimage2.gif">
+                            <img class="center" src="./images/valorant/valimage2.gif">
                         </div>
 
                         <section>
-                            <h3>WEAPONS</h3>
+                            <h1>WEAPONS</h1>
                             <!-- Weapon list on table -->
                             <div class="valweapons">
-                                <img id="img" src="./images/valorant/weapons.png">
+                                <img class="center" src="./images/valorant/weapons.png">
                             </div>
                             <article id="Gameplay">
                                 <table>
                                     <caption id="WEAPONS">WEAPON TIER LIST</caption>
                                     <thead>
                                         <tr>
-                                            <th>S optimal</th>
-                                            <th>A great</th>
-                                            <th>B good</th>
-                                            <th>C situational</th>
+                                            <th id="S">S optimal</th>
+                                            <th id="A">A great</th>
+                                            <th id="B">B good</th>
+                                            <th id="C">C situational</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -173,19 +196,19 @@
                                     </tr>
                                 <tbody>
                                     <tr>
-                                        <td>S</td>
+                                        <td id="S">S</td>
                                         <td>Vandal, Phantom, Operator, Judge</td>
                                     </tr>
                                     <tr>
-                                        <td>A</td>
+                                        <td id="A">A</td>
                                         <td>Odin, Outlaw, Sheriff, Spectre, Marshal</td>
                                     </tr>
                                     <tr>
-                                        <td>B</td>
+                                        <td id="B">B</td>
                                         <td>Stinger, Ghost, Bulldog, Guradian, Classic</td>
                                     </tr>
                                     <tr>
-                                        <td>C</td>
+                                        <td id="C">C</td>
                                         <td>Frenzy, Shorty, Bucky, Ares, Kinfe</td>
                                     </tr>
 
