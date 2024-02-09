@@ -138,24 +138,6 @@ article>a:hover {
     /* font-weight: bold; */
     padding: 1.1rem;
 }
-
-#img-head {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.main-header {
-    max-width: 75%;
-    margin: auto;
-    color: white;
-}
-
-#top-head {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
 main {
     max-width: 75%;
     margin: auto;
@@ -166,51 +148,7 @@ main {
     color: white;
 }
 
-article {
-    padding: 30px;
-    margin: 0px;
-    /* background-color: #f1f1f1; */
-}
-
-article:nth-child(odd) {
-    background-color: rgba(82, 82, 82, 0.3);
-}
-
-h4 {
-    color: #f0c894;
-}
-
 section>h3 {
     /* color: #f1b86d; */
     color: #f1b86d;
-}
-
-
-
-
-
-.hero-table {
-    text-align: center;
-}
-
-table,
-td,
-th {
-    margin: auto;
-    border: 1px solid slategrey;
-}
-
-#back-to-top {
-    margin: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-}
-
-/* Style the footer */
-footer {
-    background-color: #777;
-    padding: 1px;
-    text-align: center;
-    color: white;
 }
