@@ -133,10 +133,22 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-/* 
-section:nth-of-type(1) {
-    flex: 0;
-} */
+
+.game-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-content img {
+    flex: 1;
+}
+
+.game-content p {
+    flex: 1;
+    padding: 1rem;
+}
+
+
 
 h3 {
     color: #ff60f2;
