@@ -129,10 +129,11 @@ nav > a:hover, article > a:hover {
 }
 
 .nav-item {
-    background-color: rgba(95, 17, 17, 0.2);
+    background-color: rgba(95, 17, 17, 0.5);
     border-radius: 0.5rem;
     margin: 2px;
     border: 1px solid rgb(99, 27, 1);
+    font-size: 0.75vw;
     /* font-weight: bold; */
     /* padding: 1.1rem; */
     padding: 0.5rem;
