@@ -47,7 +47,7 @@ ul {
 /* DOTA CSS */
 
 html {
-    background-image: url('../images/cs2/cs2.png');
+    background-image: url('../images/cs2/.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -191,7 +191,7 @@ main {
     max-width: 75%;
     margin: auto;
     /* border: 2px solid slategrey; */
-    /* padding: 30px; */
+    padding: 50px;
     /* background-color: rgba(241, 241, 241, 0.6); */
     /* background-color: rgba(28, 28, 28, 0.9); */
     color: rgb(255, 255, 255);
