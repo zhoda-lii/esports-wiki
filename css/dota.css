@@ -129,7 +129,7 @@ nav > a:hover, article > a:hover {
 }
 
 .nav-item {
-    background-color: rgba(95, 17, 17, 0.5);
+    background-color: rgba(95, 17, 17, 0.75);
     border-radius: 0.5rem;
     margin: 2px;
     border: 1px solid rgb(99, 27, 1);
