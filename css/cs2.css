@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+
+article {
+    padding-left: 70px;
+    padding-right: 800px;
+}
+
+body {
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto 800px auto;
+}
+
+th {
+    border: 2px solid #000;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%
+}
