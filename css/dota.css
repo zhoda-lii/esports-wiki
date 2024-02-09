@@ -133,7 +133,7 @@ nav > a:hover, article > a:hover {
     border-radius: 0.5rem;
     margin: 2px;
     border: 1px solid rgb(99, 27, 1);
-    font-size: 0.75vw;
+    font-size: 15px;
     /* font-weight: bold; */
     /* padding: 1.1rem; */
     padding: 0.5rem;
