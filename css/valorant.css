@@ -1,5 +1,5 @@
 html {
-    background-image: url('../images/valorant/background.png');
+    background-image: url('../images/valorant/omen.gif');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -185,14 +185,9 @@ section>h3 {
     color: #f1b86d;
 }
 
-h2 {
-    margin-top: 30px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    /* color: #f1b86d; */
-    color: #e9921f;
-}
+
+
+
 
 .hero-table {
     text-align: center;
