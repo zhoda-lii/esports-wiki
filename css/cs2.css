@@ -1,16 +1,14 @@
+/* LANCE CSS */
 h1 {
     text-align: center;
 }
 
-article {
-    padding-left: 70px;
-    padding-right: 800px;
-}
 
 body {
-    width: 75%;
-    max-width: 1200px;
-    margin: 0 auto 800px auto;
+    margin: auto;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 th {
@@ -21,4 +19,220 @@ table {
     border-collapse: collapse;
     table-layout: fixed;
     width: 100%
+}
+
+
+.main-nav ul {
+    background-color: #121212;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    /* Change color */
+    align-items: center;
+}
+
+ul {
+    /* background-color: #121212; */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    /* Change color */
+    align-items: center;
+}
+
+
+
+/* DOTA CSS */
+
+html {
+    background-image: url('../images/cs2/cs2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.main-nav {
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.active {
+    background-color: rgba(82, 82, 82, 0.3);
+    /* color: #e9921f; */
+    color: #f1b86d;
+}
+
+
+li {
+    float: left;
+}
+
+.esports-nav {
+    display: block;
+    color: white;
+    text-align: center;
+    /* padding: 20px 16px; */
+    text-decoration: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #333;
+}
+
+.esports-nav a:hover {
+    background-color: #121212 !important;
+}
+
+
+
+video {
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+header {
+    /* border: 2px solid slategrey; */
+    position: relative;
+    top: 10px;
+}
+
+header>p {
+    /* background-color: #666; */
+    /* background-color: rgba(28, 28, 28, 0.9); */
+    padding: 25px;
+    margin: 0px;
+    text-align: left;
+    font-size: 35px;
+    /* color: #f1b86d; */
+    color: #e9921f;
+}
+
+nav {
+    /* background: #ccc; */
+    /* background-color: #666; */
+    /* background-color: rgba(28, 28, 28, 0.9); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+nav a:hover {
+    /* background-color: #ddd; */
+    color: #e9921f;
+    text-decoration: underline;
+}
+
+nav>a:link,
+nav>a:visited,
+nav>a:active {
+    text-decoration: none;
+    color: #f1b86d;
+}
+
+article a:link,
+article a:visited,
+article a:active {
+    text-decoration: none;
+    color: #f1b86d;
+}
+
+nav>a:hover,
+article>a:hover {
+    /* background-color: #ddd; */
+    color: #e9921f;
+    text-decoration: underline;
+}
+
+.nav-item {
+    /* background-color: rgba(95, 17, 17, 0.1); */
+    /* border: 1px solid slategrey; */
+    /* font-weight: bold; */
+    padding: 1.1rem;
+}
+
+#img-head {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.main-header {
+    max-width: 75%;
+    margin: auto;
+    color: white;
+}
+
+#top-head {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+main {
+    max-width: 75%;
+    margin: auto;
+    /* border: 2px solid slategrey; */
+    /* padding: 30px; */
+    /* background-color: rgba(241, 241, 241, 0.6); */
+    /* background-color: rgba(28, 28, 28, 0.9); */
+    color: rgb(255, 255, 255);
+    background-color: rgba(82, 82, 82, 0.7);
+
+}
+
+
+h4 {
+    color: #f0c894;
+}
+
+section>h3 {
+    /* color: #f1b86d; */
+    color: #f1b86d;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* color: #f1b86d; */
+    color: #e9921f;
+}
+
+.hero-table {
+    text-align: center;
+}
+
+table,
+td,
+th {
+    margin: auto;
+    border: 1px solid slategrey;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 1px;
+    text-align: center;
+    color: white;
 }
