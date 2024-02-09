@@ -1,6 +1,7 @@
 /* LANCE CSS */
 h1 {
     text-align: center;
+    color: #ffffff;
 }
 
 
@@ -23,7 +24,7 @@ table {
 
 
 .main-nav ul {
-    background-color: #121212;
+    background-color: #000000;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -39,9 +40,31 @@ ul {
     padding: 0px;
     overflow: hidden;
     /* Change color */
-    align-items: center;
+
 }
 
+#sub-nav {
+    /* background-color: #121212; */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    /* Change color */
+
+}
+
+#Tournaments {
+    text-align: center;
+    color: #e9921f;
+
+}
 
 
 /* DOTA CSS */
@@ -52,6 +75,7 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    scroll-padding-top: 80px
 }
 
 .main-nav {
@@ -179,7 +203,7 @@ article>a:hover {
 .main-header {
     max-width: 75%;
     margin: auto;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #top-head {
@@ -195,7 +219,7 @@ main {
     /* background-color: rgba(241, 241, 241, 0.6); */
     /* background-color: rgba(28, 28, 28, 0.9); */
     color: rgb(255, 255, 255);
-    background-color: rgba(82, 82, 82, 0.7);
+    background-color: rgba(82, 82, 82, 0.65);
 
 }
 
