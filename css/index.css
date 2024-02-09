@@ -138,11 +138,24 @@ section:nth-of-type(1) {
     flex: 0;
 } */
 
+h3 {
+    color: #ff60f2;
+}
+
+h4 {
+    color: #f8f554;
+}
+
+div a:link, div a:visited, div a:active {
+    text-decoration: none;
+    color: #5eccff;
+}
+
 section {
     flex: 1;
     padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid black;
+    /* border-radius: 0.25rem; */
+    /* border: 1px solid black; */
 }
 
 footer {
