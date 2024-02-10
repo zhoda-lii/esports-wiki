@@ -67,18 +67,6 @@ li a:hover:not(.active) {
     background-color: #121212 !important;
 }
 
-
-
-video {
-    /* position: absolute; */
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100;
-}
-
 header {
     /* border: 2px solid slategrey; */
     position: relative;
@@ -138,6 +126,7 @@ article>a:hover {
     /* font-weight: bold; */
     padding: 1.1rem;
 }
+
 main {
     max-width: 75%;
     margin: auto;
