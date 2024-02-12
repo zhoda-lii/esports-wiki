@@ -1,7 +1,7 @@
 /* LANCE CSS */
 h1 {
     text-align: center;
-    color: #ffffff;
+    color: #f1b86d
 }
 
 
@@ -60,15 +60,12 @@ ul {
 
 }
 
-#tourna {
-    text-align: center;
-}
-
-#Tournaments {
+#tournaments {
     text-align: center;
     color: #e9921f;
-
 }
+
+
 
 
 /* DOTA CSS */
