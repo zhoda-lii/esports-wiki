@@ -2,11 +2,238 @@
 <html lang="en-CA">
 
     <head>
-        <title>Dota 2: Defense of the Ancients 2 Coverage</title>
+        <title>Esports Wiki: Dota 2 Coverage</title>
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="./css/dota.css">
         <link rel="icon" type="image/x-icon" href="./images/dota/dota-favicon.ico">
+        <style>
+            html {
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                scroll-padding-top: 25px;
+            }
+            
+            body {
+                margin: auto;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            /* Main Navigation Bar */
+            .main-nav {
+                z-index: 999;
+                position: sticky;
+                top: 0;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: white;
+                text-align: center;
+            }
+            
+            /* Main Mav Bar: Home Page Link */
+            .esports-nav {
+                display: block;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            .esports-nav a:hover {
+                background-color: #121212 !important;
+            }
+
+            /* Main Mav Bar: Active Link */
+            .active {
+                background-color: rgba(82, 82, 82, 0.3);
+                color: #fff0c7;
+            }
+            
+            ul {
+                background-color: #121212;
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+                align-items: center;
+            }
+            
+            li {
+                float: left;
+            }
+            
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px 16px;
+                text-decoration: none;
+            }
+            
+            li a:hover:not(.active) {
+                background-color: #333;
+            }
+            
+            /* Video Background */
+            video {
+                position: fixed;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+                min-height: 100%;
+                z-index:-100;
+            }
+            
+            /* Dota Header + Navigation Bar */
+            header {
+                position: relative;
+                top: 10px;
+            }
+            
+            header > p {
+                padding: 25px;
+                margin: 0px;
+                text-align: left;
+                font-size: 35px;
+                color: #ff7c5f;
+            }
+            
+            .dota-header {
+                max-width: 75%;
+                margin: auto;
+                color: white;
+            }
+
+            #top-head {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            /* Dota Navigation Bar */
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            
+            nav a:hover {
+                color: white;
+                text-decoration: underline;
+            }
+            
+            nav > a:link,
+            nav > a:visited,
+            nav > a:active {
+                text-decoration: none;
+                color: #f8ff98;
+            }
+
+            .dota-nav {
+                background-color: rgba(95, 17, 17, 0.75);
+                border-radius: 0.5rem;
+                margin: 2px;
+                border: 1px solid rgb(99, 27, 1);
+                font-size: 15px;
+                padding: 0.5rem;
+            }
+
+            #img-head {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+
+            /* Hovers */
+            nav > a:hover,
+            article > a:hover,
+            #back-to-top > a:hover {
+                color: #ffad9b;
+                text-decoration: underline;
+            }
+
+            /* Main Content */
+            main {
+                max-width: 75%;
+                margin: auto;
+                background-color: rgba(28, 28, 28, 0.9);
+                color: white;
+            }
+            
+            article {
+                padding: 30px;
+                margin: 0px;
+            }
+            
+            article:nth-child(odd) {
+                background-color: rgba(82, 82, 82, 0.3);
+            }
+
+            article a:link,
+            article a:visited,
+            article a:active {
+                text-decoration: none;
+                color: #f8ff98;
+            }
+            
+            #back-to-top a:link,
+            #back-to-top a:visited,
+            #back-to-top a:active {
+                text-decoration: none;
+                color: #f8ff98;
+            }
+            
+            /* H-Tags */
+            h2 {
+                margin-top: 30px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                color: #ff7c5f;
+            }
+
+            section > h3 {
+                color: #f8ff98;
+            }
+            
+            h4 {
+                color: #f8ff98;
+            }
+            
+            /* Hero Table Section */
+            .hero-table {
+                text-align: center;
+            }
+            
+            table {
+                margin: auto;
+                border-collapse: collapse;
+                border: 2px solid rgb(138, 152, 167);
+            }
+            
+            thead > tr > th,
+            tbody > tr > th {
+                border: 1px solid rgb(138, 152, 167);
+                padding: 20px;
+            }
+            
+            td {
+                border: 1px solid rgb(138, 152, 167);
+            }
+            
+            /* After Newsletter */
+            #back-to-top {
+                margin: 0;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-align: center;
+            }
+            
+            footer {
+                background-color: #252525;
+                padding: 1px;
+                text-align: center;
+                color: white;
+            }
+        </style>
     </head>
     
     <body>
@@ -653,7 +880,7 @@
                 <h2>Subscribe to Dota 2 Newsletter</h2>
                 <div class="content">
                     <br><br>
-                    <form onsubmit="addSubscriber()">
+                    <form onsubmit="addSubscriber(event)">
                         <label for="email">Enter your email:</label>
                         <input type="email" id="email" name="email" required>
                         <br><br>
@@ -676,11 +903,11 @@
         <!-- Script for Subscribe to Dota 2 Newsletter -->
         <!-- Displays simple message only, no actual subscribing. -->
         <script>
-            // Locate element that will display the message
-            const subs_msg = document.getElementById("subscribe-msg");
-            function addSubscriber() {
+            function addSubscriber(event) {
+                // Prevent default form submission behavior
+                event.preventDefault();
                 // Add text inside the target element
-                subs_msg.innerHTML = "Your email " + document.getElementById("email").value
+                document.getElementById("subscribe-msg").innerHTML = "Your email " + document.getElementById("email").value
                     + " has been added. Thank you for subscribing! &#128276;";
                 // Stay at #newsletter after submit
                 window.location.href = "#newsletter";

@@ -2,10 +2,144 @@
 <html lang="EN">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Valorant</title>
+    <meta charset="UTF-8">
+    <title>Esports Wiki: Valorant Coverage</title>
+    <link rel="icon" type="image/x-icon" href="./images/valorant/valofavicon.ico">
     <link rel="stylesheet" href="./css/valorant.css">
     <style>
+        html {
+            background-image: url('./images/valorant/omen.gif');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            scroll-padding-top: 80px
+        }
+
+        body {
+            margin: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .main-nav {
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .active {
+            background-color: rgba(82, 82, 82, 0.3);
+            color: rgb(220, 71, 71);
+        }
+
+        ul {
+            background-color: #121212;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            align-items: center;
+        }
+
+        li {
+            float: left;
+        }
+
+        .esports-nav {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .esports-nav a:hover {
+            background-color: #121212 !important;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #333;
+        }
+
+        header {
+            position: relative;
+            top: 10px;
+        }
+
+        header>p {
+            padding: 25px;
+            margin: 0px;
+            text-align: left;
+            font-size: 35px;
+            color: #e9921f;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        nav a:hover {
+            color: #e9921f;
+            text-decoration: underline;
+        }
+
+        nav>a:link,
+        nav>a:visited,
+        nav>a:active {
+            text-decoration: none;
+            color: #f1b86d;
+        }
+
+        article a:link,
+        article a:visited,
+        article a:active {
+            text-decoration: none;
+            color: #f1b86d;
+        }
+
+        nav>a:hover,
+        article>a:hover {
+            color: #e9921f;
+            text-decoration: underline;
+        }
+
+        .nav-item {
+            padding: 1.1rem;
+        }
+
+        .nav-item a:link, .nav-item a:visited, .nav-item a:active {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-item a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 75%;
+            margin: auto;
+            background-color: rgba(28, 28, 28, 0.9);
+            color: white;
+        }
+
+        section>h3 {
+            color: #f1b86d;
+        }
+
         table {
             border-collapse: collapse;
             margin: auto;
@@ -65,12 +199,6 @@
             color: rgb(173, 170, 170);
         }
 
-        /* Color for Buttons*/
-        button {
-            background-color: rgb(220, 71, 71);
-            color: black;
-        }
-
         /* Rank colours */
         .s {
             background-color: rgb(230, 66, 66);
@@ -93,7 +221,7 @@
         }
 
         footer {
-            background-color: #777;
+            background-color: #252525;
             padding: 1px;
             text-align: center;
             color: white;
@@ -102,27 +230,27 @@
 </head>
 
 <body>
+    <div class="main-nav">
+        <ul>
+            <!-- Links Back -->
+            <li class="esports-nav"><a href="./index.html" style="color: #f8f554"><b>Esports Wiki</b></a></li>
+            <li><a href="./cs2.html">Counter-Strike 2</a></li>
+            <li><a href="./dota.html">Dota 2</a></li>
+            <li><a href="./valorant.html" class="active">Valorant</a></li>
+        </ul>
+    </div>
     <main>
-        <div class="main-nav">
-            <ul>
-                <!-- Links Back -->
-                <li class="esports-nav"><a href="./index.html">Esports Wiki</a></li>
-                <li><a href="./cs2.html">Counter-Strike 2</a></li>
-                <li><a href="./dota.html">Dota 2</a></li>
-                <li><a href="./valorant.html">Valorant</a></li>
-            </ul>
-        </div>
         <header>
             <h1>VALORANT</h1>
             <div>
                 <nav>
                     <!-- Faster Links To Content -->
-                    <div class="nav-item"><a href="#AboutValorant"><button>OVERVIEW</button></a></div>
-                    <div class="nav-item"><a href="#Preparations"><button>PREPARE</button></a></div>
-                    <div class="nav-item"><a href="#WEAPONS"><button>WEAPONS</button></a></div>
-                    <div class="nav-item"><a href="#characters"><button>CHARACTERS</button></a></div>
-                    <div class="nav-item"><a href="#MAPS"><button>MAPS</button></a></div>
-                    <div class="nav-item"><a href="#ESPORTS"><button>ESPORTS</button></a></div>
+                    <div class="nav-item"><a href="#AboutValorant">OVERVIEW</a></div>
+                    <div class="nav-item"><a href="#Preparations">PREPARE</a></div>
+                    <div class="nav-item"><a href="#WEAPONS">WEAPONS</a></div>
+                    <div class="nav-item"><a href="#characters">CHARACTERS</a></div>
+                    <div class="nav-item"><a href="#MAPS">MAPS</a></div>
+                    <div class="nav-item"><a href="#ESPORTS">ESPORTS</a></div>
                 </nav>
             </div>
         </header>
@@ -140,7 +268,7 @@
             met, the opposing squad will win.
         </p>
         <div class="valimg2">
-            <img class="center" src="./images/valorant/whatis.webp">
+            <img class="center" src="./images/valorant/whatis.webp" alt="ABOUT VALORANT">
         </div>
 
         <div id="Preparations"></div>
@@ -159,7 +287,7 @@
             squads to ensure coordinated teamwork wins a victory.
         </p>
         <div class="valimg2">
-            <img class="center" src="./images/valorant/valimage2.gif">
+            <img class="center" src="./images/valorant/valimage2.gif" alt="LET'S PREPARE">
         </div>
 
         <div id="characters"></div>
@@ -194,8 +322,8 @@
             other
             site.</p>
         <div class="valimg2">
-            <img class="center" src="./images/valorant/chac.jpeg">
-            <img class="center" src="./images/valorant/types.webp">
+            <img class="center" src="./images/valorant/chac.jpeg" alt="CHARACTERS 1">
+            <img class="center" src="./images/valorant/types.webp" alt="CHARACTERS 2">
         </div>
 
         <div id="MAPS"></div>
@@ -218,7 +346,7 @@
             terrain effectively.
         </p>
         <div class="valimg2">
-            <img class="center" src="./images/valorant/maps.webp">
+            <img class="center" src="./images/valorant/maps.webp" alt="MAPS">
         </div>
 
         <div id="ESPORTS"></div>
@@ -242,16 +370,16 @@
 
         </p>
         <div class="valimg2">
-            <img class="center" src="./images/valorant/esports.jpeg">
+            <img class="center" src="./images/valorant/esports.jpeg" alt="ESPORTS">
         </div>
 
         <section>
-            <h2>WEAPONS</h2>
+            <h2 id="WEAPONS">WEAPONS</h2>
             <!-- Weapon list on table -->
             <div class="valweapons">
-                <img class="center" src="./images/valorant/weapons.png">
+                <img class="center" src="./images/valorant/weapons.png" alt="WEAPONS">
             </div>
-            <div id="WEAPONS"></div>
+            <div></div>
             <table>
                 <caption id="weapons">WEAPON TIER LIST</caption>
                 <thead>
@@ -328,14 +456,12 @@
 
             </tbody>
         </table>
-
-
-        <!-- Footer with copyright -->
-        <footer>
-            <p>Copyright &copy; 2024 • Aron Limos </p>
-        </footer>
-
+        <br><br>
     </main>
+    <!-- Footer with copyright -->
+    <footer>
+        <p>Copyright &copy; 2024 • Aron Limos </p>
+    </footer>
 </body>
 
 </html>

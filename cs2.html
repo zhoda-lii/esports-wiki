@@ -4,10 +4,235 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Counter-Strike 2</title>
+    <title>Esports Wiki: Counter-Strike 2 Coverage</title>
     <link rel="stylesheet" href="./css/cs2.css">
     <link rel="icon" type="image/x-icon" href="./images/cs2/icon.png">
+    <style>
+        html {
+            background-image: url('./images/cs2/cs2.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            scroll-padding-top: 80px
+        }
 
+        .main-nav {
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .active {
+            background-color: rgba(82, 82, 82, 0.3);
+            color: #f1b86d;
+        }
+
+
+        li {
+            float: left;
+        }
+
+        .esports-nav {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #333;
+        }
+
+        .esports-nav a:hover {
+            background-color: #121212 !important;
+        }
+
+
+        header {
+            position: relative;
+            top: 10px;
+        }
+
+        header>p {
+            padding: 25px;
+            margin: 0px;
+            text-align: left;
+            font-size: 35px;
+            color: #e9921f;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        nav a:hover {
+            color: #e9921f;
+            text-decoration: underline;
+        }
+
+        nav>a:link,
+        nav>a:visited,
+        nav>a:active {
+            text-decoration: none;
+            color: #f1b86d;
+        }
+
+        article a:link,
+        article a:visited,
+        article a:active {
+            text-decoration: none;
+            color: #f1b86d;
+        }
+
+        nav>a:hover,
+        article>a:hover {
+            color: #e9921f;
+            text-decoration: underline;
+        }
+
+        .nav-item {
+            padding: 1.1rem;
+        }
+
+        #img-head {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .main-header {
+            max-width: 75%;
+            margin: auto;
+            color: rgb(0, 0, 0);
+        }
+
+        #top-head {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        main {
+            max-width: 75%;
+            margin: auto;
+            padding: 50px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(82, 82, 82, 0.65);
+
+        }
+
+
+        h4 {
+            color: #f0c894;
+        }
+
+        section>h3 {
+            color: #f1b86d;
+        }
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            color: #e9921f;
+        }
+
+        .hero-table {
+            text-align: center;
+        }
+
+        table,
+        td,
+        th {
+            margin: auto;
+            border: 1px solid slategrey;
+        }
+
+        footer {
+            background-color: #252525;
+            padding: 1px;
+            text-align: center;
+            color: white;
+        }
+
+
+
+
+
+        /* LANCE CSS */
+        h1 {
+            text-align: center;
+            color: #f1b86d
+        }
+
+
+        body {
+            margin: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        th {
+            border: 2px solid #000;
+        }
+
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 100%
+        }
+
+        .main-nav ul {
+            background-color: #000000;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+
+        #sub-nav {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            font-size: 1.5rem;
+            justify-content: space-around;
+            align-items: center;
+            height: 10vh;
+        }
+
+        #tournaments {
+            text-align: center;
+            color: #e9921f;
+        }
+
+
+    </style>
 </head>
 
 
@@ -17,7 +242,7 @@
 
     <div class="main-nav">
         <ul>
-            <li class="esports-nav"><a href="./index.html">Esports Wiki</a></li>
+            <li class="esports-nav"><a href="./index.html" style="color: #f8f554"><b>Esports Wiki</b></a></li>
             <li><a href="./cs2.html" class="active">Counter-Strike 2</a></li>
             <li><a href="./dota.html">Dota 2</a></li>
             <li><a href="./valorant.html">Valorant</a></li>
