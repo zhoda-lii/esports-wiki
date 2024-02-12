@@ -1,4 +1,4 @@
-Esports Wiki: Coverage for Counter-Strike 2, Dota 2, and Valorant  
+🎮📖 Esports Wiki: Coverage for Counter-Strike 2, Dota 2, and Valorant  
 
 Authors:
 Joash Daligcon  
