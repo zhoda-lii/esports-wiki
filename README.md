@@ -1,6 +1,6 @@
 # 🎮📖 Esports Wiki
 
-Providing comprehensive coverage and resources for three of the most popular esports titles:  
+Providing concise coverage and resources for three of the most popular esports titles:  
 - Counter-Strike 2
 - Dota 2
 - Valorant
