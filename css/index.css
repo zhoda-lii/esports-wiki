@@ -1,3 +1,4 @@
+/* CSS organized sequentially, following the order in index.html */
 
 html {
     background-image: url('../images/index/index-bg.gif');
@@ -110,7 +111,6 @@ main {
     margin-right: auto;
     background-color: rgba(28, 28, 28, 0.8);
     color: white;
-    /* padding: 5%; */
 }
 
 article {
@@ -188,7 +188,7 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (max-width: 830px) { /* 810px iPad */
+@media screen and (max-width: 830px) {
     #img-head {
         margin-top: 3rem;
     }
@@ -202,9 +202,6 @@ footer {
     
     .esports-desc {
         display: none;
-        /* top: 70%; */
-        /* left: 35%; */
-        /* font-size: 1.5vw; */
     }
 
     .content-art1 {

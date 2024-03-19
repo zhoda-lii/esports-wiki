@@ -1,3 +1,4 @@
+/* CSS organized sequentially, following the order in dota.html */
 
 html {
     background-repeat: no-repeat;
@@ -18,7 +19,7 @@ video {
     left: 0;    
     min-width: 100%;
     min-height: 100%;
-    z-index:-100;
+    z-index: -100;
 }
 
 /* Main Navigation Bar + Page Title Banner */
@@ -323,7 +324,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 815px) { /* 810px iPad */
+@media screen and (max-width: 815px) {
     .origins-content {
         display: block;
     }
