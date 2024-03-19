@@ -1,0 +1,249 @@
+
+html {
+    background-image: url('../images/index/index-bg.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+/* Main Navigation Bar */
+.main-nav {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.esports-nav {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.esports-nav a:hover {
+    background-color: #121212 !important;
+}
+
+ul {
+    background-color: #121212;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #333;
+}
+
+.head-title {
+    color: #f8f554;
+}
+
+/* Page Title Banner */
+.main-banner-title {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    position: relative;
+}
+
+#img-head {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: fill;
+    height: 10%;
+    width: 100%;
+}
+
+.esports-title {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.esports-desc {
+    position: absolute;
+    top: 70%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 1vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Content */
+main {
+    max-width: 70%;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(28, 28, 28, 0.8);
+    color: white;
+    /* padding: 5%; */
+}
+
+article {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* H-Tags */
+h3 {
+    color: #ff60f2;
+}
+
+h4 {
+    color: #f8f554;
+}
+
+div a:link,
+div a:visited,
+div a:active {
+    text-decoration: none;
+    color: #5eccff;
+}
+
+/* Article 1 */
+/* Welcome to Esports Wiki */
+#article-1 {
+    padding-top: 5%;
+}
+
+.content-art1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+/* Article 2, 3, 4 */
+/* Counter-Strike 2, Dota 2, Valorant */
+.game-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-content p {
+    flex: 1;
+    padding-left: 1rem;
+}
+
+.game-content-img {
+    max-height: 250px;
+    max-width: 250px;
+    border-radius: 15px;
+}
+
+/* Article 5, 6 */
+.img-container img {
+    float: left;
+    max-width: 60%;
+    margin-right: 1rem;
+}
+
+#article-6 {
+    padding-bottom: 5%;
+}
+
+/* Footer */
+footer {
+    background-color: #252525;
+    padding: 1px;
+    text-align: center;
+    color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 830px) { /* 810px iPad */
+    #img-head {
+        margin-top: 3rem;
+    }
+
+    .esports-title {
+        top: 70%;
+        left: 30%;
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    
+    .esports-desc {
+        display: none;
+        /* top: 70%; */
+        /* left: 35%; */
+        /* font-size: 1.5vw; */
+    }
+
+    .content-art1 {
+        display: block;
+        column-count: 1;
+    }
+
+    .game-content {
+        display: block;
+        column-count: 1;
+        text-align: center;
+    }
+
+    .img-container img {
+        float: none;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+
+    .esports-title {
+        top: 70%;
+        left: 35%;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+    
+    .esports-desc {
+        display: none;
+    }
+
+    .top-head {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .top-head {
+        font-size: x-small;
+    }
+}

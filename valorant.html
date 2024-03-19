@@ -6,227 +6,6 @@
     <title>Esports Wiki: Valorant Coverage</title>
     <link rel="icon" type="image/x-icon" href="./images/valorant/valofavicon.ico">
     <link rel="stylesheet" href="./css/valorant.css">
-    <style>
-        html {
-            background-image: url('./images/valorant/omen.gif');
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            scroll-padding-top: 80px
-        }
-
-        body {
-            margin: auto;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        .main-nav {
-            z-index: 999;
-            position: sticky;
-            top: 0;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: white;
-            text-align: center;
-        }
-
-        .active {
-            background-color: rgba(82, 82, 82, 0.3);
-            color: rgb(220, 71, 71);
-        }
-
-        ul {
-            background-color: #121212;
-            list-style-type: none;
-            margin: 0px;
-            padding: 0px;
-            overflow: hidden;
-            align-items: center;
-        }
-
-        li {
-            float: left;
-        }
-
-        .esports-nav {
-            display: block;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .esports-nav a:hover {
-            background-color: #121212 !important;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 20px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #333;
-        }
-
-        header {
-            position: relative;
-            top: 10px;
-        }
-
-        header>p {
-            padding: 25px;
-            margin: 0px;
-            text-align: left;
-            font-size: 35px;
-            color: #e9921f;
-        }
-
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-
-        nav a:hover {
-            color: #e9921f;
-            text-decoration: underline;
-        }
-
-        nav>a:link,
-        nav>a:visited,
-        nav>a:active {
-            text-decoration: none;
-            color: #f1b86d;
-        }
-
-        article a:link,
-        article a:visited,
-        article a:active {
-            text-decoration: none;
-            color: #f1b86d;
-        }
-
-        nav>a:hover,
-        article>a:hover {
-            color: #e9921f;
-            text-decoration: underline;
-        }
-
-        .nav-item {
-            padding: 1.1rem;
-        }
-
-        .nav-item a:link, .nav-item a:visited, .nav-item a:active {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        .nav-item a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            max-width: 75%;
-            margin: auto;
-            background-color: rgba(28, 28, 28, 0.9);
-            color: white;
-        }
-
-        section>h3 {
-            color: #f1b86d;
-        }
-
-        table {
-            border-collapse: collapse;
-            margin: auto;
-            background-color: rgb(35, 34, 34);
-
-        }
-
-        /* More space and gap for images */
-        .center {
-            background-color: #959090;
-            margin-bottom: 30px;
-            margin-top: 30px;
-        }
-
-        th,
-        td {
-            border: 1px solid #000;
-            text-align: center;
-            padding: 0.25rem;
-            color: white;
-        }
-
-        nav {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: center;
-            justify-content: center;
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 0px;
-            margin-left: 150px;
-            margin-right: 150px;
-            background-color: rgb(220, 71, 71);
-            color: rgb(16, 14, 14);
-        }
-
-        h2 {
-            margin-top: auto;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            margin-right: 0px;
-            color: rgb(220, 71, 71);
-        }
-
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-
-        .para {
-            text-align: center;
-            color: rgb(173, 170, 170);
-        }
-
-        /* Rank colours */
-        .s {
-            background-color: rgb(230, 66, 66);
-            padding: 10px;
-        }
-
-        .a {
-            background-color: rgb(247, 166, 14);
-            padding: 10px;
-        }
-
-        .b {
-            background-color: rgb(226, 226, 92);
-            padding: 10px;
-        }
-
-        .c {
-            background-color: rgb(105, 180, 105);
-
-        }
-
-        footer {
-            background-color: #252525;
-            padding: 1px;
-            text-align: center;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
@@ -239,89 +18,95 @@
             <li><a href="./valorant.html" class="active">Valorant</a></li>
         </ul>
     </div>
-    <main>
-        <header>
-            <h1>VALORANT</h1>
-            <div>
-                <nav>
-                    <!-- Faster Links To Content -->
-                    <div class="nav-item"><a href="#AboutValorant">OVERVIEW</a></div>
-                    <div class="nav-item"><a href="#Preparations">PREPARE</a></div>
-                    <div class="nav-item"><a href="#WEAPONS">WEAPONS</a></div>
-                    <div class="nav-item"><a href="#characters">CHARACTERS</a></div>
-                    <div class="nav-item"><a href="#MAPS">MAPS</a></div>
-                    <div class="nav-item"><a href="#ESPORTS">ESPORTS</a></div>
-                </nav>
-            </div>
-        </header>
-        <!-- main -->
-        <div id="AboutValorant"></div>
-        <h2>ABOUT VALORANT</h2>
-        <div class="content"></div>
-        <p class="para">
-            Valorant is a 5v5 multiplayer first-person shooter (FPS) where one team attacks and the other
-            defends.
-            The main game mode, Search and Destroy, is very similar to CS:GO.
-            The attacking team's goal is to plant a bomb (called a spike) and have it detonate, while the
-            defending team tries to avoid the bomb by defusing it in condition with the timer. Regardless of
-            whether the spike is planted or not, if a squad is wiped out before any other victory condition is
-            met, the opposing squad will win.
-        </p>
-        <div class="valimg2">
-            <img class="center" src="./images/valorant/whatis.webp" alt="ABOUT VALORANT">
+    <header>
+        <h1>VALORANT</h1>
+        <div>
+            <nav>
+                <!-- Faster Links To Content -->
+                <div class="nav-item"><a href="#AboutValorant">OVERVIEW</a></div>
+                <div class="nav-item"><a href="#Preparations">PREPARE</a></div>
+                <div class="nav-item"><a href="#WEAPONS">WEAPONS</a></div>
+                <div class="nav-item"><a href="#characters">CHARACTERS</a></div>
+                <div class="nav-item"><a href="#MAPS">MAPS</a></div>
+                <div class="nav-item"><a href="#ESPORTS">ESPORTS</a></div>
+            </nav>
         </div>
+    </header>
+    <main>
+        <!-- main -->
+        <div class="container">
+            <div id="AboutValorant">
+                <h2>ABOUT VALORANT</h2>
+                <div class="content"></div>
+                <p class="para1">
+                    Valorant is a 5v5 multiplayer first-person shooter (FPS) where one team attacks and the other
+                    defends.
+                    The main game mode, Search and Destroy, is very similar to CS:GO.
+                    The attacking team's goal is to plant a bomb (called a spike) and have it detonate, while the
+                    defending team tries to avoid the bomb by defusing it in condition with the timer. Regardless of
+                    whether the spike is planted or not, if a squad is wiped out before any other victory condition is
+                    met, the opposing squad will win.
+                </p>
 
-        <div id="Preparations"></div>
-        <h2>LET'S PREPARE</h2>
-        <div class="content"></div>
-        <p class="para">
-            To optimize your performance in Valorant matches, it's essential to understand your
-            playstyle
-            and how to effectively utilize your abilities and equipment in various game situations.
-            Before
-            diving into battle, familiarize yourself with each character's skillset and common scenarios
-            to base
-            your decisions on prior experience rahter than mere instinct. Additionally, the expectations
-            for roles
-            like defensive characters or offensive characters when playing with premade
-            squads to ensure coordinated teamwork wins a victory.
-        </p>
-        <div class="valimg2">
-            <img class="center" src="./images/valorant/valimage2.gif" alt="LET'S PREPARE">
+                <div class="valimg1">
+                    <img class="center" src="./images/valorant/whatis.webp" alt="ABOUT VALORANT">
+                </div>
+            </div>
+
+
+            <div id="Preparations">
+                <h2>LET'S PREPARE</h2>
+                <div class="content"></div>
+                <p class="para2">
+                    To optimize your performance in Valorant matches, it's essential to understand your
+                    playstyle
+                    and how to effectively utilize your abilities and equipment in various game situations.
+                    Before
+                    diving into battle, familiarize yourself with each character's skillset and common scenarios
+                    to base
+                    your decisions on prior experience rahter than mere instinct. Additionally, the expectations
+                    for roles
+                    like defensive characters or offensive characters when playing with premade
+                    squads to ensure coordinated teamwork wins a victory.
+                </p>
+                <div class="valimg2">
+                    <img class="center" src="./images/valorant/valimage2.gif" alt="LET'S PREPARE">
+                </div>
+            </div>
         </div>
 
         <div id="characters"></div>
         <h2>CHARACTERS</h2>
         <div class="content"></div>
-        <p class="para">
+        <p class="para3">
             Characters are arranged into class. There are four classes of characters in
             Valorant.</p>
-        <p class="para">DUELIST: Primary attackers that are cable of pushing the enemies. Either
+        <p class="para4">DUELIST: Primary attackers that are cable of pushing the enemies. Either
             one or
             many enemies,
             duelist roll is to fight anyone no matter what.</p>
         <!-- New Lines to emphasize roles -->
-        <p class="para">INITIATOR: Initiates during a push on site or enemies. They have a skill
+        <p class="para5">INITIATOR: Initiates during a push on site or enemies. They have a skill
             sets
             containing
             flash, and recon abilities. Initiator provides the team a advantage in
             clearing/pushing into
             areas
             and intel on where enemies could be.</p>
-        <p class="para">CONTROLLER: Controllers main roles is to hinder the opposing team, by
+        <p class="para6">CONTROLLER: Controllers main roles is to hinder the opposing team, by
             using
             their abilities.
             They block of certain areas, that help clearing angles easier. They can also block
             entries,
             making it harder for enemies to rush.</p>
-        <p class="para">SENTINEL: Defenders of a site. Main goal of sentinels is to hold down
+        <p class="para7">SENTINEL: Defenders of a site. Main goal of sentinels is to hold down
             one site
             with their
             abilities.
             With their abilities being strong, it makes enemies hesitate to switch and push the
             other
             site.</p>
-        <div class="valimg2">
+        <div class="valimg3">
             <img class="center" src="./images/valorant/chac.jpeg" alt="CHARACTERS 1">
             <img class="center" src="./images/valorant/types.webp" alt="CHARACTERS 2">
         </div>
@@ -329,7 +114,7 @@
         <div id="MAPS"></div>
         <h2>VALORANT MAPS</h2>
         <div class="maps"></div>
-        <p class="para">
+        <p class="para8">
             Many believe that Valorant has revolutionized tactical team-based shooters by
             placing equal
             importance on shooting
@@ -345,123 +130,136 @@
             each
             terrain effectively.
         </p>
-        <div class="valimg2">
+        <div class="valimg4">
             <img class="center" src="./images/valorant/maps.webp" alt="MAPS">
         </div>
 
         <div id="ESPORTS"></div>
         <h2>ESPORTS</h2>
         <div class="esports"></div>
-        <p class="para">
-            Riot Games has developed an esports ecosystem for Valorant, including regional leagues, international
+        <p class="para9">
+            Riot Games has developed an esports ecosystem for Valorant, including regional leagues,
+            international
             tournaments,
             and a structured competitive ladder. Some of the major Valorant esports events include the Valorant
             Champions Tour (VCT),
             which features various stages leading up to a global championship, as well as regional
-            leagues like the Valorant Champions Tour North America (VCT NA), Valorant Champions Tour Europe (VCT EU),
+            leagues like the Valorant Champions Tour North America (VCT NA), Valorant Champions Tour Europe (VCT
+            EU),
             and others.
         </p>
-        <p class="para">Valorant esports refers to competitive gaming events and tournaments played in Riot Games'
-            tactical first-person shooter game, Valorant. Esports in Valorant involve professional teams competing
+        <p class="para10">Valorant esports refers to competitive gaming events and tournaments played in Riot
+            Games'
+            tactical first-person shooter game, Valorant. Esports in Valorant involve professional teams
+            competing
             against
-            each other in organized leagues and tournaments for cash prizes, recognition, and glory. Players form teams
+            each other in organized leagues and tournaments for cash prizes, recognition, and glory. Players
+            form
+            teams
             and
             compete in matches that require strategic thinking, teamwork, and precise aiming skills.
 
         </p>
-        <div class="valimg2">
+        <div class="valimg5">
             <img class="center" src="./images/valorant/esports.jpeg" alt="ESPORTS">
         </div>
 
-        <section>
-            <h2 id="WEAPONS">WEAPONS</h2>
-            <!-- Weapon list on table -->
-            <div class="valweapons">
-                <img class="center" src="./images/valorant/weapons.png" alt="WEAPONS">
-            </div>
-            <div></div>
+        <div class="container2">
+            <section>
+                <h2 id="WEAPONS">WEAPONS</h2>
+                <!-- Weapon list on table -->
+                <div class="valimg5">
+                    <img class="center" src="./images/valorant/weapons.png" alt="WEAPONS">
+                </div>
+                <!-- Table of Weapon Types and Teir -->
+
+                <table>
+                    <caption id="weapons">WEAPON TIER LIST</caption>
+                    <thead>
+                        <tr>
+                            <th class="s">S optimal</th>
+                            <th class="a">A great</th>
+                            <th class="b">B good</th>
+                            <th class="c">C situational</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vandal</td>
+                            <td>Odin</td>
+                            <td>Stinger</td>
+                            <td>Frenzy</td>
+                        </tr>
+                        <tr>
+                            <td>Phantom</td>
+                            <td>Outlaw</td>
+                            <td>Ghost</td>
+                            <td>Shorty</td>
+                        </tr>
+                        <tr>
+                            <td>Operator</td>
+                            <td>Sheriff</td>
+                            <td>Bulldog</td>
+                            <td>Bucky</td>
+                        </tr>
+                        <tr>
+                            <td>Judge</td>
+                            <td>Spectre</td>
+                            <td>Guradian</td>
+                            <td>Ares</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Marshal</td>
+                            <td>Classic</td>
+                            <td>Knife</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- section -->
+            <!-- Weapon teir list in short -->
             <table>
-                <caption id="weapons">WEAPON TIER LIST</caption>
                 <thead>
                     <tr>
-                        <th class="s">S optimal</th>
-                        <th class="a">A great</th>
-                        <th class="b">B good</th>
-                        <th class="c">C situational</th>
+                        <th>Tier list</th>
+                        <th>Weapons</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Vandal</td>
-                        <td>Odin</td>
-                        <td>Stinger</td>
-                        <td>Frenzy</td>
+                        <td class="s">S</td>
+                        <td>Vandal, Phantom, Operator, Judge</td>
                     </tr>
                     <tr>
-                        <td>Phantom</td>
-                        <td>Outlaw</td>
-                        <td>Ghost</td>
-                        <td>Shorty</td>
+                        <td class="a">A</td>
+                        <td>Odin, Outlaw, Sheriff, Spectre, Marshal</td>
                     </tr>
                     <tr>
-                        <td>Operator</td>
-                        <td>Sheriff</td>
-                        <td>Bulldog</td>
-                        <td>Bucky</td>
+                        <td class="b">B</td>
+                        <td>Stinger, Ghost, Bulldog, Guradian, Classic</td>
                     </tr>
                     <tr>
-                        <td>Judge</td>
-                        <td>Spectre</td>
-                        <td>Guradian</td>
-                        <td>Ares</td>
+                        <td class="c">C</td>
+                        <td>Frenzy, Shorty, Bucky, Ares, Kinfe</td>
+                    </tr>
 
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Marshal</td>
-                        <td>Classic</td>
-                        <td>Knife</td>
-
-                    </tr>
                 </tbody>
             </table>
-        </section>
+        </div>
 
-        <!-- section -->
-        <!-- Weapon teir list in short -->
-        <table>
-            <thead>
-                <tr>
-                    <th>Tier list</th>
-                    <th>Weapons</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="s">S</td>
-                    <td>Vandal, Phantom, Operator, Judge</td>
-                </tr>
-                <tr>
-                    <td class="a">A</td>
-                    <td>Odin, Outlaw, Sheriff, Spectre, Marshal</td>
-                </tr>
-                <tr>
-                    <td class="b">B</td>
-                    <td>Stinger, Ghost, Bulldog, Guradian, Classic</td>
-                </tr>
-                <tr>
-                    <td class="c">C</td>
-                    <td>Frenzy, Shorty, Bucky, Ares, Kinfe</td>
-                </tr>
-
-            </tbody>
-        </table>
         <br><br>
+
+
     </main>
     <!-- Footer with copyright -->
     <footer>
         <p>Copyright &copy; 2024 • Aron Limos </p>
     </footer>
+
 </body>
 
 </html>

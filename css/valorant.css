@@ -1,0 +1,271 @@
+html {
+    background-image: url('../images/valorant/omen.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    scroll-padding-top: 80px
+}
+
+body {
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-nav {
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.active {
+    background-color: rgba(82, 82, 82, 0.3);
+    color: rgb(220, 71, 71);
+}
+
+ul {
+    background-color: #121212;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    align-items: center;
+}
+
+li {
+    float: left;
+}
+
+.esports-nav {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.esports-nav a:hover {
+    background-color: #121212 !important;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #333;
+}
+
+header {
+    position: relative;
+    top: 10px;
+}
+
+header>p {
+    padding: 25px;
+    margin: 0px;
+    text-align: left;
+    font-size: 35px;
+    color: #e9921f;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+nav a:hover {
+    color: #e9921f;
+    text-decoration: underline;
+}
+
+nav>a:link,
+nav>a:visited,
+nav>a:active {
+    text-decoration: none;
+    color: #f1b86d;
+}
+
+article a:link,
+article a:visited,
+article a:active {
+    text-decoration: none;
+    color: #f1b86d;
+}
+
+nav>a:hover,
+article>a:hover {
+    color: #e9921f;
+    text-decoration: underline;
+}
+
+.nav-item {
+    padding: 1.1rem;
+}
+
+.nav-item a:link,
+.nav-item a:visited,
+.nav-item a:active {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 75%;
+    margin: auto;
+    background-color: rgba(28, 28, 28, 0.9);
+    color: white;
+}
+
+section>h3 {
+    color: #f1b86d;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    background-color: rgb(35, 34, 34);
+
+}
+
+/* More space and gap for images */
+.center {
+    background-color: #959090;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 0.25rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgb(220, 71, 71);
+    color: rgb(16, 14, 14);
+}
+
+h2 {
+    margin-top: auto;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: rgb(220, 71, 71);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.para {
+    text-align: center;
+    color: rgb(173, 170, 170);
+}
+
+/* Rank colours */
+.s {
+    background-color: rgb(230, 66, 66);
+    padding: 10px;
+}
+
+.a {
+    background-color: rgb(247, 166, 14);
+    padding: 10px;
+}
+
+.b {
+    background-color: rgb(226, 226, 92);
+    padding: 10px;
+}
+
+.c {
+    background-color: rgb(105, 180, 105);
+
+}
+
+footer {
+    background-color: #252525;
+    padding: 1px;
+    text-align: center;
+    color: white;
+}
+
+/* Grid */
+.container {
+    display: grid;
+    grid-template-areas:
+        "AboutValorant Preparations";
+
+}
+
+#AboutValorant {
+    grid-area: AboutValorant;
+}
+
+#Preparations {
+    grid-area: Preparations;
+}
+
+/* Multicol */
+.container2 {
+    column-count: 3;
+    column-width: 20px;
+}
+
+/* Media Querry */
+@media screen and (max-width: 980px) {
+    .valimg1 {
+        display: none;
+    }
+
+    .valimg2 {
+        display: none;
+    }
+
+    .valimg3 {
+        display: none;
+    }
+
+    .valimg4 {
+        display: none;
+    }
+
+    .valimg5 {
+        display: none;
+    }
+
+
+    .container2 {
+        column-count: 1;
+    }
+}

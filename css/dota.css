@@ -1,0 +1,364 @@
+
+html {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    scroll-padding-top: 25px;
+}
+
+body {
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+/* Video Background */
+video {
+    position: fixed;
+    top: 0;
+    left: 0;    
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-100;
+}
+
+/* Main Navigation Bar + Page Title Banner */
+header {
+    position: relative;
+    top: 10px;
+}
+
+/* Main Navigation Bar */
+.main-nav {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+/* Main Mav Bar: Home Page Link */
+.esports-nav {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.esports-nav a:hover {
+    background-color: #121212 !important;
+}
+
+/* Main Mav Bar: Active Link */
+.active {
+    background-color: rgba(82, 82, 82, 0.3);
+    color: #fff0c7;
+}
+
+ul {
+    background-color: #121212;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    align-items: center;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #333;
+}
+
+.head-title {
+    color: #f8f554;
+}
+
+/* Page Title Banner */
+.main-banner-title {
+    max-width: 75%;
+    margin-left: 5%;
+    margin-right: auto;
+    padding: 0;
+    padding-top: 3rem;
+    position: relative;
+}
+
+#img-head {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Main Content */
+main {
+    max-width: 75%;
+    margin: auto;
+    margin-left: 5%;
+    background-color: rgba(28, 28, 28, 0.9);
+    color: white;
+}
+
+article {
+    padding: 30px;
+    margin: 0px;
+}
+
+article:nth-child(odd) {
+    background-color: rgba(82, 82, 82, 0.3);
+}
+
+article a:link,
+article a:visited,
+article a:active {
+    text-decoration: none;
+    color: #f8ff98;
+}
+
+article a:hover {
+    color: #ffad9b;
+    text-decoration: underline;
+}
+
+/* H-Tags */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #ff7c5f;
+}
+
+h3 {
+    color: #f8ff98;
+}
+
+h4 {
+    color: #f8ff98;
+}
+
+/* Article 1, Image Containers */
+.img-container {
+    text-align: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-container iframe {
+    width: 560px;
+    height: 315px; 
+}
+
+/* Article 2: Using grid */
+.origins-content {
+    display: grid;
+    grid-template-areas:
+    "para1 para1"
+    "img1 img2"
+    "para2 para2"
+    "img3 img4"
+    "para3 para3"
+    "para4 para4"
+    "img5 img6";
+}
+
+#para1 {
+    grid-area: para1;
+}
+
+#para2 {
+    grid-area: para2;
+}
+
+#para3 {
+    grid-area: para3;
+}
+
+#para4 {
+    grid-area: para4;
+}
+
+#img1 {
+    grid-area: img1;
+}
+
+#img2 {
+    grid-area: img2;
+}
+
+#img3 {
+    grid-area: img3;
+}
+
+#img4 {
+    grid-area: img4;
+}
+
+#img5 {
+    grid-area: img5;
+}
+
+#img6 {
+    grid-area: img6;
+}
+
+/* Article 3: Using float */
+.objectives-container img {
+    float: left;
+    max-height: 15%;
+    max-width: 15%;
+    margin-right: 1rem;
+}
+
+/* Article 4 */
+/* Hero Table Section */
+.hero-table {
+    text-align: center;
+}
+
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 100%;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(138, 152, 167);
+}
+
+thead > tr > th,
+tbody > tr > th {
+    border: 1px solid rgb(138, 152, 167);
+    padding: 20px;
+}
+
+td {
+    border: 1px solid rgb(138, 152, 167);
+}
+
+#img-invoker {
+    height: 250px;
+}
+
+/* Article 6: Using multicol */
+.dota-esports-content {
+    column-width: 450px;
+}
+
+.graph-img {
+    text-align: center;
+}
+
+.graph-img img {
+    width: 80%;
+    height: auto !important;
+    max-width:1000px;
+}
+
+/* Aside */
+aside {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+    padding-top: 5rem;
+    padding-right: 2.5rem;
+    z-index: 0;
+}
+
+.dota-nav {
+    background-color: rgba(170, 30, 30, 0.85);
+    border: 1px solid rgb(99, 27, 1);
+    border-radius: 0.5rem;
+    margin: 2px;
+    padding: 0.5rem;
+}
+
+nav > a:link,
+nav > a:visited,
+nav > a:active {
+    text-decoration: none;
+    color: #f8ff98;
+}
+
+nav > a:hover {
+    color: #ffad9b;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    z-index: 999;
+    background-color: #252525;
+    padding: 1px;
+    text-align: center;
+    color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1240px), (max-height: 680px) {
+    main {
+        margin-left: auto;
+    }
+    .main-banner-title {
+        margin-left: auto;
+    }
+    aside {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 815px) { /* 810px iPad */
+    .origins-content {
+        display: block;
+    }
+
+    .objectives-container img {
+        float: left;
+        max-height: 50%;
+        max-width: 50%;
+        margin-right: 1rem;
+    }
+
+    .table-container {
+        overflow-y: auto; /* Enable vertical scrolling */
+        max-height: 400px;
+    }
+    
+    .img-container iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .objectives-container img {
+        float: none;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .top-head {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .top-head {
+        font-size: x-small;
+    }
+}

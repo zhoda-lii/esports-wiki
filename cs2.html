@@ -8,229 +8,7 @@
     <link rel="stylesheet" href="./css/cs2.css">
     <link rel="icon" type="image/x-icon" href="./images/cs2/icon.png">
     <style>
-        html {
-            background-image: url('./images/cs2/cs2.png');
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            scroll-padding-top: 80px
-        }
-
-        .main-nav {
-            z-index: 999;
-            position: sticky;
-            top: 0;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: white;
-            text-align: center;
-        }
-
-        .active {
-            background-color: rgba(82, 82, 82, 0.3);
-            color: #f1b86d;
-        }
-
-
-        li {
-            float: left;
-        }
-
-        .esports-nav {
-            display: block;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 20px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #333;
-        }
-
-        .esports-nav a:hover {
-            background-color: #121212 !important;
-        }
-
-
-        header {
-            position: relative;
-            top: 10px;
-        }
-
-        header>p {
-            padding: 25px;
-            margin: 0px;
-            text-align: left;
-            font-size: 35px;
-            color: #e9921f;
-        }
-
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-
-        nav a:hover {
-            color: #e9921f;
-            text-decoration: underline;
-        }
-
-        nav>a:link,
-        nav>a:visited,
-        nav>a:active {
-            text-decoration: none;
-            color: #f1b86d;
-        }
-
-        article a:link,
-        article a:visited,
-        article a:active {
-            text-decoration: none;
-            color: #f1b86d;
-        }
-
-        nav>a:hover,
-        article>a:hover {
-            color: #e9921f;
-            text-decoration: underline;
-        }
-
-        .nav-item {
-            padding: 1.1rem;
-        }
-
-        #img-head {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-        }
-
-        .main-header {
-            max-width: 75%;
-            margin: auto;
-            color: rgb(0, 0, 0);
-        }
-
-        #top-head {
-            padding-top: 0;
-            padding-bottom: 0;
-        }
-
-        main {
-            max-width: 75%;
-            margin: auto;
-            padding: 50px;
-            color: rgb(255, 255, 255);
-            background-color: rgba(82, 82, 82, 0.65);
-
-        }
-
-
-        h4 {
-            color: #f0c894;
-        }
-
-        section>h3 {
-            color: #f1b86d;
-        }
-
-        h2 {
-            margin-top: 30px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            margin-right: 0px;
-            color: #e9921f;
-        }
-
-        .hero-table {
-            text-align: center;
-        }
-
-        table,
-        td,
-        th {
-            margin: auto;
-            border: 1px solid slategrey;
-        }
-
-        footer {
-            background-color: #252525;
-            padding: 1px;
-            text-align: center;
-            color: white;
-        }
-
-
-
-
-
-        /* LANCE CSS */
-        h1 {
-            text-align: center;
-            color: #f1b86d
-        }
-
-
-        body {
-            margin: auto;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        th {
-            border: 2px solid #000;
-        }
-
-        table {
-            border-collapse: collapse;
-            table-layout: fixed;
-            width: 100%
-        }
-
-        .main-nav ul {
-            background-color: #000000;
-            list-style-type: none;
-            margin: 0px;
-            padding: 0px;
-            overflow: hidden;
-            align-items: center;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0px;
-            padding: 0px;
-            overflow: hidden;
-        }
-
-
-        #sub-nav {
-            list-style-type: none;
-            margin: 0px;
-            padding: 0px;
-            overflow: hidden;
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            font-size: 1.5rem;
-            justify-content: space-around;
-            align-items: center;
-            height: 10vh;
-        }
-
-        #tournaments {
-            text-align: center;
-            color: #e9921f;
-        }
-
+        
 
     </style>
 </head>
@@ -250,17 +28,30 @@
     </div>
 
     <header>
+        
         <h1>Counter-Strike 2</h1>
 
     </header>
 
-    <ul id="sub-nav">
-        <li><a href="#Overview">Overview</a></li>
-        <li><a href="#Gameplay">Gameplay</a></li>
-        <li><a href="#GameModes">Game Modes</a></li>
-        <li><a href="#Maps">Maps</a></li>
-        <li><a href="#Tournaments">Tournaments</a></li>
-    </ul>
+    <nav>
+        <a href="#Overview">
+            <div class="nav-item nav-item-1">Overview</div>
+        </a>
+        <a href="#Gameplay">
+            <div class="nav-item nav-item-2">Gameplay</div>
+        </a>
+        <a href="#GameModes">
+            <div class="nav-item nav-item-3">Modes</div>
+        </a>
+        <a href="#Maps">
+            <div class="nav-item nav-item-4">Maps</div>
+        </a>
+        <a href="#Tournaments">
+            <div class="nav-item nav-item-5">Tournaments</div>
+        </a>
+    </nav>
+    
+
     <main>
 
         <section id="Overview">
@@ -272,7 +63,7 @@
             </div>
 
         </section>
-
+    <div class="p1">
         <section id="Gameplay">
 
             <h2>Gameplay</h2>
@@ -294,66 +85,70 @@
                 variant of Competitive in which participants use a veto mechanism to choose which Active Duty maps to
                 play.</p>
         </section>
+    </div>
+
 
         <section id="Maps">
-
+        <div id="mapa">
             <h2>Maps</h2>
-            <p>While the game has several maps, the ones that are currently being used in professional scene are Mirage,
-                Nuke, Overpass, Vertigo, Ancient, Inferno, and Anubis.
-            </p>
-            <ul>
-                <li>Mirage - The Bomb Defusal map Mirage (de_mirage), originally called Strike, is available for
+        </div>
+
+        <div class="p2">
+                <p id="mirage">Mirage - The Bomb Defusal map Mirage (de_mirage), originally called Strike, is available for
                     Counter-Strike: Global Offensive and Counter-Strike 2. June 6, 2013, saw the addition of the map to
                     the game. The map is themed like a Middle Eastern town, but because of its close resemblance to
-                    Moroccan style architecture, it is likely set somewhere in Morocco.<br>
+                    Moroccan style architecture, it is likely set somewhere in Morocco.</p>
 
-                </li>
+            
 
 
-                <li>Nuke - The map takes place in a warehouse containing nuclear materials or a nuclear power plant. In
+                <p id="nuke">Nuke - The map takes place in a warehouse containing nuclear materials or a nuclear power plant. In
                     Global Offensive, the original version of the map takes place a German nuclear power plant, while
                     the revamped version takes place in an American one. Unlike most Counter-Strike bomb defusal maps,
                     the map revolves around a central structure rather than multiple lanes, with the two bombsites being
-                    overlapped on top of each other.<br>
+                    overlapped on top of each other.</p>
+        </div>
 
-                </li>
+        <div class="p3">
+          
 
-                <li>Overpass - The map's setting is a canal bridge with a park erected above it in Berlin, Germany. The
+                <p id="ovp">Overpass - The map's setting is a canal bridge with a park erected above it in Berlin, Germany. The
                     GSG-9 must guard a stopped military shipment on a canal overpass, while the Phoenix Connexion can
                     either attack the container directly or attempt to demolish the flyover by bombing the pillar
                     beneath. Counter-Terrorists spawn at bombsite A, where the crippled freight vehicle is parked.
                     Meanwhile, the Terrorist Spawn Zone is located at the canal's bottom. Bombsite B is located below
-                    the CT Spawn Zone and is easily accessible via a stairway. Snipers
-                    can readily guard this area since a sniper nest is strategically placed throughout the location.<br>
+                    the CT Spawn Zone and is easily accessible via a stairway. Snipers can readily guard this area since a sniper nest is strategically placed throughout the location.</p>
 
-                </li>
+              
 
-                <li>Vertigo - Vertigo is set in a building that is currently under construction and centers on the
+                <p id="vtg">Vertigo - Vertigo is set in a building that is currently under construction and centers on the
                     battle between the Counter-Terrorist and Terrorist squads. The Terrorists' main goal is to bomb the
                     building, and the CTs must stop them. The bombsites and Counter-Terrorist spawn are both on the top
-                    level of the map, whereas the Terrorist spawn is on the lower floor near the staircase.<br>
+                    level of the map, whereas the Terrorist spawn is on the lower floor near the staircase.</p>
+        </div>
+  
+        <div class="p4">
 
-                </li>
-
-                <li>Ancient - Ancient looks to take place in an archeological site in the middle of a jungle (most
+                <p id="act">Ancient - Ancient looks to take place in an archeological site in the middle of a jungle (most
                     likely in Central America). Across the globe, there exist numerous artifacts such as pottery,
                     artworks, and structures that mimic those of the Aztec empire. Each bombsite is referred to as a
                     'plaza' on the placard and has a separate theme color. Bombsite A is orange with tarps, paint, and
-                    signage, whereas Bombsite B is pastel blue.<br>
+                    signage, whereas Bombsite B is pastel blue.</p>
 
-                </li>
+         
 
 
-                <li>Inferno - The map depicts a tiny village with European architecture. The existence of the Separatist
+                <p id="ifn">Inferno - The map depicts a tiny village with European architecture. The existence of the Separatist
                     group in the Global Offensive edition implies that the map is located in Italy, as indicated by the
                     Italian-language signage spotted across the area. However, the separatist party is also present in
                     Spain's Basque territory and in France, so it is possible that it will be present there as well. The
                     map is generally rectangular, with the Counter-Terrorists spawning in one corner, the Terrorists in
-                    the diagonally opposite corner, and the two bombsites in the remaining two corners.<br>
+                    the diagonally opposite corner, and the two bombsites in the remaining two corners.</p>
+        </div>
 
-                </li>
+        <div class="p5">
 
-                <li>Anubis - Anubis (de_anubis) is a Bomb Defusal map made by Roald, jakuza, and jd40 that appears in
+                <p id="anb">Anubis - Anubis (de_anubis) is a Bomb Defusal map made by Roald, jakuza, and jd40 that appears in
                     Counter-Strike: Global Offensive. It was introduced to the game on March 31, 2020, with Chlorine.
                     Anubis was initially released in Scrimmage mode alone, but it later made its way into the Active
                     Duty Group, replacing Dust II. Anubis was promoted from Scrimmage to Competitive on April 10, 2020,
@@ -362,12 +157,11 @@
                     2021, but was re-added on August 16, 2022, to commemorate Counter-Strike: Global Offensive's tenth
                     anniversary. Following the IEM Rio 2022 Major, it was added to the Active Duty Group in the November
                     18, 2022 update. This is the second community-created map to make it into the Active Duty Group,
-                    following Cache.<br>
+                    following Cache.</p>
+        </div>
+            
 
-                </li>
 
-
-            </ul>
         </section>
         <section id="Tournaments">
             <div style="text-align:center;">
@@ -380,6 +174,7 @@
             </div>
             <h2 id="toruna">S-Tier & A-Tier Tournaments</h2>
             <br>
+            <div class="tournas">
             <table>
                 <tr>
                     <th>Tier</th>
@@ -554,7 +349,7 @@
                 </tr>
 
             </table>
-
+        </div>
         </section>
 
 

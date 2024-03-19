@@ -7,264 +7,28 @@
 		<meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="./css/dota.css">
         <link rel="icon" type="image/x-icon" href="./images/dota/favicon.ico">
-        <style>
-            html {
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: center;
-                scroll-padding-top: 25px;
-            }
-            
-            body {
-                margin: auto;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
-
-            /* Main Navigation Bar */
-            .main-nav {
-                z-index: 999;
-                position: sticky;
-                top: 0;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                color: white;
-                text-align: center;
-            }
-            
-            /* Main Mav Bar: Home Page Link */
-            .esports-nav {
-                display: block;
-                color: white;
-                text-align: center;
-                text-decoration: none;
-            }
-
-            .esports-nav a:hover {
-                background-color: #121212 !important;
-            }
-
-            /* Main Mav Bar: Active Link */
-            .active {
-                background-color: rgba(82, 82, 82, 0.3);
-                color: #fff0c7;
-            }
-            
-            ul {
-                background-color: #121212;
-                list-style-type: none;
-                margin: 0px;
-                padding: 0px;
-                overflow: hidden;
-                align-items: center;
-            }
-            
-            li {
-                float: left;
-            }
-            
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 20px 16px;
-                text-decoration: none;
-            }
-            
-            li a:hover:not(.active) {
-                background-color: #333;
-            }
-            
-            /* Video Background */
-            video {
-                position: fixed;
-                top: 0;
-                left: 0;
-                min-width: 100%;
-                min-height: 100%;
-                z-index:-100;
-            }
-            
-            /* Dota Header + Navigation Bar */
-            header {
-                position: relative;
-                top: 10px;
-            }
-            
-            header > p {
-                padding: 25px;
-                margin: 0px;
-                text-align: left;
-                font-size: 35px;
-                color: #ff7c5f;
-            }
-            
-            .dota-header {
-                max-width: 75%;
-                margin: auto;
-                color: white;
-            }
-
-            #top-head {
-                padding-top: 0;
-                padding-bottom: 0;
-            }
-
-            /* Dota Navigation Bar */
-            nav {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-            }
-            
-            nav a:hover {
-                color: white;
-                text-decoration: underline;
-            }
-            
-            nav > a:link,
-            nav > a:visited,
-            nav > a:active {
-                text-decoration: none;
-                color: #f8ff98;
-            }
-
-            .dota-nav {
-                background-color: rgba(95, 17, 17, 0.75);
-                border-radius: 0.5rem;
-                margin: 2px;
-                border: 1px solid rgb(99, 27, 1);
-                font-size: 15px;
-                padding: 0.5rem;
-            }
-
-            #img-head {
-                object-fit: cover;
-                height: 100%;
-                width: 100%;
-            }
-
-            /* Hovers */
-            nav > a:hover,
-            article > a:hover,
-            #back-to-top > a:hover {
-                color: #ffad9b;
-                text-decoration: underline;
-            }
-
-            /* Main Content */
-            main {
-                max-width: 75%;
-                margin: auto;
-                background-color: rgba(28, 28, 28, 0.9);
-                color: white;
-            }
-            
-            article {
-                padding: 30px;
-                margin: 0px;
-            }
-            
-            article:nth-child(odd) {
-                background-color: rgba(82, 82, 82, 0.3);
-            }
-
-            article a:link,
-            article a:visited,
-            article a:active {
-                text-decoration: none;
-                color: #f8ff98;
-            }
-            
-            #back-to-top a:link,
-            #back-to-top a:visited,
-            #back-to-top a:active {
-                text-decoration: none;
-                color: #f8ff98;
-            }
-            
-            /* H-Tags */
-            h2 {
-                margin-top: 30px;
-                margin-bottom: 0px;
-                margin-left: 0px;
-                margin-right: 0px;
-                color: #ff7c5f;
-            }
-
-            section > h3 {
-                color: #f8ff98;
-            }
-            
-            h4 {
-                color: #f8ff98;
-            }
-            
-            /* Hero Table Section */
-            .hero-table {
-                text-align: center;
-            }
-            
-            table {
-                margin: auto;
-                border-collapse: collapse;
-                border: 2px solid rgb(138, 152, 167);
-            }
-            
-            thead > tr > th,
-            tbody > tr > th {
-                border: 1px solid rgb(138, 152, 167);
-                padding: 20px;
-            }
-            
-            td {
-                border: 1px solid rgb(138, 152, 167);
-            }
-            
-            /* After Newsletter */
-            #back-to-top {
-                margin: 0;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                text-align: center;
-            }
-            
-            footer {
-                background-color: #252525;
-                padding: 1px;
-                text-align: center;
-                color: white;
-            }
-        </style>
     </head>
     
     <body>
-        <!-- Main Navigation Bar -->
-        <div class="main-nav">
-            <ul>
-                <li class="esports-nav"><a href="./index.html" style="color: #f8f554"><b>Esports Wiki</b></a></li>
-                <li><a href="./cs2.html">Counter-Strike 2</a></li>
-                <li><a href="./dota.html" class="active">Dota 2</a></li>
-                <li><a href="./valorant.html">Valorant</a></li>
-            </ul>
-        </div>
-
         <!-- Video Background -->
         <video autoplay muted loop>
             <source src="./images/dota/Dota2_Background.mp4" type="video/mp4">
         </video>
 
-        <!-- Dota Header + Navigation Bar -->
-        <header class="dota-header">
-            <p id="top-head">Dota 2 Coverage &#128214;</p>
-            <nav class="nav-header">
-                <a href="#article-1"><div class="dota-nav">&#11167; New to Dota?</div></a>
-                <a href="#article-2"><div class="dota-nav">&#11167; Dota 2 Origins</div></a>
-                <a href="#article-3"><div class="dota-nav">&#11167; Game Objectives</div></a>
-                <a href="#article-4"><div class="dota-nav">&#11167; Game Preparation</div></a>
-                <a href="#article-5"><div class="dota-nav">&#11167; Main Game</div></a>
-                <a href="#article-6"><div class="dota-nav">&#11167; Dota 2 in Esports</div></a>
-                <a href="./index.html"><div class="dota-nav">&#11165; Back to Main</div></a>
+        <header class="top-head">
+            <!-- Main Navigation Bar -->
+            <nav class="main-nav">
+                <ul>
+                    <li class="esports-nav"><a class="head-title" href="./index.html"><b>Esports Wiki</b></a></li>
+                    <li><a href="./cs2.html">Counter-Strike 2</a></li>
+                    <li><a class="active" href="./dota.html">Dota 2</a></li>
+                    <li><a href="./valorant.html">Valorant</a></li>
+                </ul>
             </nav>
-            <img id="img-head" src="./images/dota/Dota2_Header.png" alt="Dota 2 Header">
+            <!-- Page Title Banner -->
+            <div class="main-banner-title">
+                <img id="img-head" src="./images/dota/Dota2_Header.png" alt="Dota 2 Header">
+            </div>
         </header>
         
         <!-- Main Content: 6 Articles + 1 Newsletter -->
@@ -275,7 +39,7 @@
                     <p>
                         Dota 2 is a highly competitive multiplayer online battle arena (MOBA) game where two teams, the Radiant and the Dire, clash in a strategic battle for supremacy. Each player controls a powerful hero with unique abilities, working together to destroy the enemy's Ancient while defending their own. The game is renowned for its depth, teamwork, and dynamic gameplay.
                     </p>
-                    <div style="text-align: center;">
+                    <div class="img-container">
                         <img src="./images/dota/Dota2_Loading.jpg" alt="Versus Loading Screen">
                     </div>
                     <p>
@@ -289,30 +53,39 @@
             </article>
             <article id="article-2">
                 <h2>Dota 2 Origins</h2>
-                <div class="content">
-                    <p>
+                <!-- This div uses grid -->
+                <div class="origins-content">
+                    <p id="para1">
                         The origin of Dota 2 can be traced back to a custom map for the game Warcraft III: Reign of Chaos and its expansion, Warcraft III: The Frozen Throne. DotA was created by a mapmaker named Eul in the early 2000s. The map gained popularity, and its development continued under the contributions of various modders and the gaming community.
                     </p>
-                    <div style="text-align: center;">
-                        <img src="./images/dota/Dota_1_1a.jpg" alt="Reign of Chaos" style="height: 350px; width: auto;">
-                        <img src="./images/dota/Dota_1_1b.jpg" alt="Frozen Throne" style="height: 350px; width: auto;">
+                    <div id="img1" class="img-container">
+                        <img src="./images/dota/Dota_1_1a.jpg" alt="Reign of Chaos">
                     </div>
-                    <p>
+                    <div id="img2" class="img-container">
+                        <img src="./images/dota/Dota_1_1b.jpg" alt="Frozen Throne">
+                    </div>
+
+                    <p id="para2">
                         One of the prominent versions of DotA was developed by a modder known as IceFrog, who played a significant role in shaping the game and introducing new features. DotA Allstars, a variant of the original DotA, became particularly popular and attracted a large player base.
                     </p>
-                    <div style="text-align: center;">
-                        <img src="./images/dota/Dota_1_2.jpg" alt="Dota AllStars" style="height: 350px; width: auto;">
-                        <img src="./images/dota/Dota_1_2_Gameplay.jpg" alt="Dota Gameplay" style="height: 350px; width: auto;">
+                    <div id="img3" class="img-container">
+                        <img src="./images/dota/Dota_1_2_Gameplay.jpg" alt="Dota Gameplay">
                     </div>
-                    <p>
+                    <div id="img4" class="img-container">
+                        <img src="./images/dota/Dota2_Gameplay.jpg" alt="Dota 2 Gameplay">
+                    </div>
+
+                    <p id="para3">
                         Valve Corporation, recognizing the popularity of DotA, decided to work with IceFrog to create a standalone sequel. This collaboration led to the development and release of Dota 2, which was officially launched by Valve on July 9, 2013.
                     </p>
-                    <p>
+                    <p id="para4">
                         Dota 2 retained many of the core mechanics and heroes from the original DotA while introducing updated graphics, new heroes, and additional features. The transition to a standalone game on the Source engine allowed Dota 2 to become a major player in the Esports scene and one of the most popular MOBA games globally.
                     </p>
-                    <div style="text-align: center;">
-                        <img src="./images/dota/Dota2_Valve.jpg" alt="Valve's Dota 2" style="height: 350px; width: auto;">
-                        <img src="./images/dota/Dota2_Gameplay.jpg" alt="Dota 2 Gameplay" style="height: 350px; width: auto;">
+                    <div id="img5" class="img-container">
+                        <img src="./images/dota/Dota_1_2.jpg" alt="Dota AllStars">
+                    </div>
+                    <div id="img6" class="img-container">
+                        <img src="./images/dota/Dota2_Valve.jpg" alt="Valve's Dota 2">
                     </div>
                 </div>
                 <hr>
@@ -320,19 +93,20 @@
             <article id="article-3">
                 <h2>Game Objectives</h2>
                 <div class="content">
+                    <!-- This div uses float -->
+                    <div class="objectives-container">
+                        <img src="./images/dota/Dota2_Map.jpg" alt="Dota 2 Map">
+                    </div>
                     <p>
                         The primary objective in Dota 2 is to destroy the enemy Ancient, a heavily guarded structure located within each team's base. To achieve this, players must navigate through three lanes, defeat enemy creeps, and strategically push into the opponent's territory. Along the way, securing objectives like towers and Roshan, the powerful neutral monster, provides significant advantages.
                     </p>
                     <p>
                         Dota 2's map is divided into three lanes: top, middle, and bottom. Each lane is guarded by defensive structures called towers, which must be destroyed to advance further into enemy territory. In addition to pushing lanes, players can also farm neutral creeps in the jungle, a neutral territory between lanes, to gain gold and experience, further enhancing their hero's power.
                     </p>
-                    <div style="text-align: center;">
-                        <img src="./images/dota/Dota2_Map.jpg" alt="Dota 2 Map">
-                    </div>
                     <p>
                         Securing Roshan, a formidable neutral monster located in the center of the map, can turn the tide of the game. Killing Roshan grants the team who slays it the Aegis of the Immortal, a powerful resurrection item that allows a hero to respawn upon death. Additionally, Roshan drops the Cheese, Refresher Shard, and Aghanim's Blessing, valuable items that provide significant advantages in teamfights.
                     </p>
-                    <div style="text-align: center;">
+                    <div class="img-container">
                         <img src="./images/dota/Dota2_Roshan.gif" alt="Dota 2 Roshan Play">
                     </div>
                     <p>
@@ -341,7 +115,7 @@
                     <p>
                         Team coordination and strategic decision-making are essential for success in Dota 2. Players must communicate effectively, coordinate ganks, and execute well-timed teamfights to gain map control, secure objectives, and ultimately destroy the enemy Ancient.
                     </p>
-                    <div style="text-align: center;">
+                    <div class="img-container">
                         <img src="./images/dota/Dota2_Win.gif" alt="Dota 2 Win">
                     </div>
                 </div>
@@ -356,439 +130,441 @@
                     </p>
                     <section class="hero-table">
                         <h3>Heroes List</h3>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th rowspan="2" colspan="1"></th>
-                                    <th rowspan="1" colspan="2">&#129470; Strength</th>
-                                    <th rowspan="1" colspan="2">&#129462; Agility</th>
-                                    <th rowspan="1" colspan="2">&#129504; Intelligence</th>
-                                </tr>
-                                <tr>
-                                    <th rowspan="1" colspan="1">Radiant</th>
-                                    <th rowspan="1" colspan="1">Dire</th>
-                                    <th rowspan="1" colspan="1">Radiant</th>
-                                    <th rowspan="1" colspan="1">Dire</th>
-                                    <th rowspan="1" colspan="1">Radiant</th>
-                                    <th rowspan="1" colspan="1">Dire</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th rowspan="2" colspan="1">A</th>
-                                    <td>Alchemist</td>
-                                    <td>Abaddon</td>
-                                    <td>Anti-Mage</td>
-                                    <td>Arc Warden</td>
-                                    <td></td>
-                                    <td>Ancient Apparition</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Axe</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>                                    
-                                </tr>
-                                <tr>
-                                    <th rowspan="3" colspan="1">B</th>
-                                    <td>Beastmaster</td>
-                                    <td></td>
-                                    <td>Bounty Hunter</td>
-                                    <td>Bloodseeker</td>
-                                    <td></td>
-                                    <td>Bane</td>
-                                </tr>
-                                <tr>
-                                    <td>Brewmaster</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Broodmother</td>
-                                    <td></td>
-                                    <td>Batrider</td>                                    
-                                </tr>
-                                <tr>
-                                    <td>Bristleback</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="2" colspan="1">C</th>
-                                    <td>Centaur Warrunner</td>
-                                    <td>Chaos Knight</td>
-                                    <td></td>
-                                    <td>Clinkz</td>
-                                    <td>Chen</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Clockwerk</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Crystal Maiden</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="3" colspan="1">D</th>
-                                    <td>Dragon Knight</td>
-                                    <td>Doom</td>
-                                    <td>Drow Ranger</td>
-                                    <td></td>
-                                    <td>Dark Willow</td>
-                                    <td>Dark Seer</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Disruptor</td>
-                                    <td>Dazzle</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Death Prophet</td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="3" colspan="1">E</th>
-                                    <td>Earth Spirit</td>
-                                    <td></td>
-                                    <td>Ember Spirit</td>
-                                    <td></td>
-                                    <td>Enchantress</td>
-                                    <td>Enigma</td>
-                                </tr>
-                                <tr>
-                                    <td>Earthshaker</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Elder Titan</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="1" colspan="1">F</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Faceless Void</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="1" colspan="1">G</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Gyrocopter</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Grimstroke</td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="1" colspan="1">H</th>
-                                    <td>Huskar</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="1" colspan="1">I</th>
-                                    <td>Io</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Invoker</td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="1" colspan="1">J</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Juggernaut</td>
-                                    <td></td>
-                                    <td>Jakiro</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="1" colspan="1">K</th>
-                                    <td>Kunkka</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Keeper of the Light</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="3" colspan="1">L</th>
-                                    <td>Legion Commander</td>
-                                    <td>Lifestealer</td>
-                                    <td>Lone Druid</td>
-                                    <td></td>
-                                    <td>Lina</td>
-                                    <td>Leshrac</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Lycan</td>
-                                    <td>Luna</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Lich</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Lion</td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="3" colspan="1">M</th>
-                                    <td>Mars</td>
-                                    <td>Magnus</td>
-                                    <td>Mirana</td>
-                                    <td>Medusa</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Monkey King</td>
-                                    <td>Meepo</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Morphling</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="1" colspan="1">N</th>
-                                    <td></td>
-                                    <td>Night Stalker</td>
-                                    <td>Naga Siren</td>
-                                    <td>Nyx Assassin</td>
-                                    <td>Nature's Prophet</td>
-                                    <td>Necrophos</td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="2" colspan="1">O</th>
-                                    <td>Omniknight</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Ogre Magi</td>
-                                    <td>Outworld Destroyer</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Oracle</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="2" colspan="1">P</th>
-                                    <td>Phoenix</td>
-                                    <td>Pudge</td>
-                                    <td>Pangolier</td>
-                                    <td>Phantom Assassin</td>
-                                    <td>Puck</td>
-                                    <td>Pugna</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Phantom Lancer</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="1" colspan="1">Q</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Queen of Pain</td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="1" colspan="1">R</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Riki</td>
-                                    <td>Razor</td>
-                                    <td>Rubick</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="4" colspan="1">S</th>
-                                    <td>Snapfire</td>
-                                    <td>Sand King</td>
-                                    <td>Sniper</td>
-                                    <td>Shadow Fiend</td>
-                                    <td>Shadow Shaman</td>
-                                    <td>Shadow Demon</td>
-                                </tr>
-                                <tr>
-                                    <td>Sven</td>
-                                    <td>Slardar</td>
-                                    <td></td>
-                                    <td>Slark</td>
-                                    <td>Silencer</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Spirit Breaker</td>
-                                    <td></td>
-                                    <td>Spectre</td>
-                                    <td>Skywrath Mage</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Storm Spirit</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="4" colspan="1">T</th>
-                                    <td>Timbersaw</td>
-                                    <td>Tidehunter</td>
-                                    <td>Templar Assassin</td>
-                                    <td>Terrorblade</td>
-                                    <td>Techies</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Tiny</td>
-                                    <td></td>
-                                    <td>Troll Warlord</td>
-                                    <td></td>
-                                    <td>Tinker</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Treant Protector</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Tusk</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="2" colspan="1">U</th>
-                                    <td></td>
-                                    <td>Underlord</td>
-                                    <td>Ursa</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Undying</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="2" colspan="1">V</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Vengeful Spirit</td>
-                                    <td>Venomancer</td>
-                                    <td>Void Spirit</td>
-                                    <td>Visage</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Viper</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="3" colspan="1">W</th>
-                                    <td></td>
-                                    <td>Wraith King</td>
-                                    <td></td>
-                                    <td>Weaver</td>
-                                    <td>Windranger</td>
-                                    <td>Warlock</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Winter Wyvern</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Witch Doctor</td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="1" colspan="1">Z</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Zeus</td>
-                                    <td></td>
-                                </tr>
-                                    
-                            </tbody>
-                        </table>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" colspan="1"></th>
+                                        <th rowspan="1" colspan="2">&#129470; Strength</th>
+                                        <th rowspan="1" colspan="2">&#129462; Agility</th>
+                                        <th rowspan="1" colspan="2">&#129504; Intelligence</th>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">Radiant</th>
+                                        <th rowspan="1" colspan="1">Dire</th>
+                                        <th rowspan="1" colspan="1">Radiant</th>
+                                        <th rowspan="1" colspan="1">Dire</th>
+                                        <th rowspan="1" colspan="1">Radiant</th>
+                                        <th rowspan="1" colspan="1">Dire</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th rowspan="2" colspan="1">A</th>
+                                        <td>Alchemist</td>
+                                        <td>Abaddon</td>
+                                        <td>Anti-Mage</td>
+                                        <td>Arc Warden</td>
+                                        <td></td>
+                                        <td>Ancient Apparition</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Axe</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>                                    
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="3" colspan="1">B</th>
+                                        <td>Beastmaster</td>
+                                        <td></td>
+                                        <td>Bounty Hunter</td>
+                                        <td>Bloodseeker</td>
+                                        <td></td>
+                                        <td>Bane</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brewmaster</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Broodmother</td>
+                                        <td></td>
+                                        <td>Batrider</td>                                    
+                                    </tr>
+                                    <tr>
+                                        <td>Bristleback</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2" colspan="1">C</th>
+                                        <td>Centaur Warrunner</td>
+                                        <td>Chaos Knight</td>
+                                        <td></td>
+                                        <td>Clinkz</td>
+                                        <td>Chen</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Clockwerk</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Crystal Maiden</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="3" colspan="1">D</th>
+                                        <td>Dragon Knight</td>
+                                        <td>Doom</td>
+                                        <td>Drow Ranger</td>
+                                        <td></td>
+                                        <td>Dark Willow</td>
+                                        <td>Dark Seer</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Disruptor</td>
+                                        <td>Dazzle</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Death Prophet</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="3" colspan="1">E</th>
+                                        <td>Earth Spirit</td>
+                                        <td></td>
+                                        <td>Ember Spirit</td>
+                                        <td></td>
+                                        <td>Enchantress</td>
+                                        <td>Enigma</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Earthshaker</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elder Titan</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">F</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Faceless Void</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">G</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Gyrocopter</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Grimstroke</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">H</th>
+                                        <td>Huskar</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">I</th>
+                                        <td>Io</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Invoker</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">J</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Juggernaut</td>
+                                        <td></td>
+                                        <td>Jakiro</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">K</th>
+                                        <td>Kunkka</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Keeper of the Light</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="3" colspan="1">L</th>
+                                        <td>Legion Commander</td>
+                                        <td>Lifestealer</td>
+                                        <td>Lone Druid</td>
+                                        <td></td>
+                                        <td>Lina</td>
+                                        <td>Leshrac</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Lycan</td>
+                                        <td>Luna</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Lich</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Lion</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="3" colspan="1">M</th>
+                                        <td>Mars</td>
+                                        <td>Magnus</td>
+                                        <td>Mirana</td>
+                                        <td>Medusa</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Monkey King</td>
+                                        <td>Meepo</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Morphling</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">N</th>
+                                        <td></td>
+                                        <td>Night Stalker</td>
+                                        <td>Naga Siren</td>
+                                        <td>Nyx Assassin</td>
+                                        <td>Nature's Prophet</td>
+                                        <td>Necrophos</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2" colspan="1">O</th>
+                                        <td>Omniknight</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Ogre Magi</td>
+                                        <td>Outworld Destroyer</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Oracle</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2" colspan="1">P</th>
+                                        <td>Phoenix</td>
+                                        <td>Pudge</td>
+                                        <td>Pangolier</td>
+                                        <td>Phantom Assassin</td>
+                                        <td>Puck</td>
+                                        <td>Pugna</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Phantom Lancer</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">Q</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Queen of Pain</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">R</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Riki</td>
+                                        <td>Razor</td>
+                                        <td>Rubick</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="4" colspan="1">S</th>
+                                        <td>Snapfire</td>
+                                        <td>Sand King</td>
+                                        <td>Sniper</td>
+                                        <td>Shadow Fiend</td>
+                                        <td>Shadow Shaman</td>
+                                        <td>Shadow Demon</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sven</td>
+                                        <td>Slardar</td>
+                                        <td></td>
+                                        <td>Slark</td>
+                                        <td>Silencer</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Spirit Breaker</td>
+                                        <td></td>
+                                        <td>Spectre</td>
+                                        <td>Skywrath Mage</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Storm Spirit</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="4" colspan="1">T</th>
+                                        <td>Timbersaw</td>
+                                        <td>Tidehunter</td>
+                                        <td>Templar Assassin</td>
+                                        <td>Terrorblade</td>
+                                        <td>Techies</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tiny</td>
+                                        <td></td>
+                                        <td>Troll Warlord</td>
+                                        <td></td>
+                                        <td>Tinker</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Treant Protector</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tusk</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2" colspan="1">U</th>
+                                        <td></td>
+                                        <td>Underlord</td>
+                                        <td>Ursa</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Undying</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2" colspan="1">V</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Vengeful Spirit</td>
+                                        <td>Venomancer</td>
+                                        <td>Void Spirit</td>
+                                        <td>Visage</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Viper</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="3" colspan="1">W</th>
+                                        <td></td>
+                                        <td>Wraith King</td>
+                                        <td></td>
+                                        <td>Weaver</td>
+                                        <td>Windranger</td>
+                                        <td>Warlock</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Winter Wyvern</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Witch Doctor</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">Z</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Zeus</td>
+                                        <td></td>
+                                    </tr>
+                                        
+                                </tbody>
+                            </table>
+                        </div>
                     </section>
-                    <section style="text-align: center;">
+                    <section class="img-container">
                         <h3>Sample Hero: Invoker (Intelligence, Dire Affiliated)</h3>
-                        <img id="img-10" src="./images/dota/Dota2_Invoker.gif" alt="Invoker" style="height: 250px;">
+                        <img id="img-invoker" src="./images/dota/Dota2_Invoker.gif" alt="Invoker">
                     </section>
                     <section>
                         <h3>Patch Notes:</h3>
@@ -814,8 +590,8 @@
                         To have a better understanding of the game, watch the video below which displays top 25 plays in Dota 2 History, courtesy of
                         <a href="https://www.youtube.com/@hOlyhexOr" target="_blank">hOlyhexOr</a>. 
                     </p>
-                    <div style="text-align: center;">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5x4YsbsiMNc?si=1wLdK2A7jRBP1t75" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="img-container">
+                        <iframe src="https://www.youtube.com/embed/5x4YsbsiMNc?si=1wLdK2A7jRBP1t75" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
                 <hr>
@@ -823,7 +599,8 @@
             <article id="article-6">
                 <h2>Dota 2 in Esports</h2>
                 <!-- Article content will have 6 sections -->
-                <div class="content">
+                <!-- This div uses multicol -->
+                <div class="dota-esports-content">
                     <p>
                         Dota 2 is one of the leading titles in Esports and competitive gaming. It boasts a massive player base and a vibrant professional scene with tournaments, leagues, and championships held worldwide. 
                         <br>Here are some key aspects of Dota 2's presence in Esports:
@@ -833,40 +610,34 @@
                         <p>
                             • The pinnacle of Dota 2 Esports is "The International" (TI), an annual tournament organized by Valve Corporation. TI features the best teams from around the world competing for a multi-million dollar prize pool. It is renowned for its large-scale production, intense competition, and passionate fanbase.
                         </p>
-                        <div style="text-align: center;">
-                            <a href="https://www.statista.com/statistics/749033/dota-2-championships-prize-pool/" rel="nofollow">
-                                <img src="https://www.statista.com/graphic/1/749033/dota-2-championships-prize-pool.jpg" alt="Statistic: Dota 2 The International championship prize pool from 2011 to 2023 (in million U.S. dollars) | Statista" style="width: 50%; height: auto !important; max-width:1000px;-ms-interpolation-mode: bicubic;">
-                            </a><br>Courtesy of  <a href="https://www.statista.com" rel="nofollow">Statista</a>
+                        <div class="graph-img">
+                            <img src="./images/dota/dota_prize.png" alt="Statistic: Dota 2 The International championship prize pool from 2011 to 2023 (in million U.S. dollars) | Statista">
+                            <br>Courtesy of  <a href="https://www.statista.com/statistics/749033/dota-2-championships-prize-pool/" rel="nofollow">Statista</a>
                         </div>
-                        <br>
                     </section>
                     <section>
                         <h4>Professional Leagues</h4>
                         <p>
                             • In addition to TI, Dota 2 has numerous professional leagues and circuits hosted by organizations like ESL, DreamHack, and Beyond The Summit. These leagues offer regular competitions, giving teams opportunities to earn prize money, qualify for major tournaments, and showcase their skills.
                         </p>
-                        <br>
                     </section>
                     <section>
                         <h4>Regional Competitions</h4>
                         <p>
                             • Dota 2's Esports ecosystem includes regional competitions in regions like North America, Europe, China, Southeast Asia, and CIS (Commonwealth of Independent States). These regional tournaments serve as qualifiers for larger events and help foster talent development within specific regions.
                         </p>
-                        <br>
                     </section>
                     <section>
                         <h4>Teams and Players</h4>
                         <p>
                             • Professional Dota 2 teams, often sponsored by organizations or backed by investors, compete in various tournaments and leagues. Players, revered for their skill and expertise, form the backbone of these teams and are highly valued for their abilities in the game.
                         </p>
-                        <br>
                     </section>
                     <section>
                         <h4>Streaming and Content Creation</h4>
                         <p>
                             • Many Dota 2 players, both professional and casual, engage in streaming and content creation on platforms like Twitch and YouTube. Streaming provides an additional source of income for players and allows fans to watch their favorite players in action, learn from their gameplay, and interact with them in real-time.
                         </p>
-                        <br>
                     </section>
                     <section>
                         <h4>Community Engagement</h4>
@@ -889,10 +660,23 @@
                     <h4 id="subscribe-msg">&#128276;</h4>
                 </div>
             </article>
-            <div id="back-to-top">
-                <a href="#top-head"><div><h4>&#11165; Back to Top</h4></div></a>
-            </div>
         </main>
+
+        <aside>
+            <div class="img-container">
+                <img src="./images/dota/dota2_logo.png" alt="Dota 2 Logo Aside">
+            </div>
+            <nav>
+                <a href="#article-1"><div class="dota-nav">&#11166; New to Dota?</div></a>
+                <a href="#article-2"><div class="dota-nav">&#11166; Dota 2 Origins</div></a>
+                <a href="#article-3"><div class="dota-nav">&#11166; Game Objectives</div></a>
+                <a href="#article-4"><div class="dota-nav">&#11166; Game Preparation</div></a>
+                <a href="#article-5"><div class="dota-nav">&#11166; Main Game</div></a>
+                <a href="#article-6"><div class="dota-nav">&#11166; Dota 2 in Esports</div></a>
+                <br>
+                <a href="./index.html"><div class="dota-nav">&#11164; Back to Main</div></a>
+            </nav>
+        </aside>
 
         <footer>
             <p>
