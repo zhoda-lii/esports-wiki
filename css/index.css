@@ -222,6 +222,9 @@ footer {
 }
 
 @media screen and (max-width: 475px) {
+    .top-head {
+        font-size: small;
+    }
 
     .esports-title {
         top: 70%;
@@ -234,8 +237,13 @@ footer {
         display: none;
     }
 
-    .top-head {
-        font-size: small;
+    .game-content-img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .game-content p {
+        padding-left: 0;
     }
 }
 

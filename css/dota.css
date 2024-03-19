@@ -316,15 +316,21 @@ footer {
     main {
         margin-left: auto;
     }
+
     .main-banner-title {
         margin-left: auto;
     }
+
     aside {
         display: none;
     }
 }
 
 @media screen and (max-width: 815px) {
+    .main-banner-title {
+        padding-top: 2.5rem;
+    }
+
     .origins-content {
         display: block;
     }
@@ -348,13 +354,14 @@ footer {
 }
 
 @media screen and (max-width: 475px) {
+    .top-head {
+        font-size: small;
+    }
+
     .objectives-container img {
         float: none;
         max-height: 100%;
         max-width: 100%;
-    }
-    .top-head {
-        font-size: small;
     }
 }
 
