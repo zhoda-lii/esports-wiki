@@ -7,23 +7,23 @@ Providing concise coverage and resources for three of the most popular esports t
 
 ## Authors
 
-- Aron Limos
-- Joash Daligcon
-- Lance Mirano
+- AronLimos
+- zhoda-lii
+- kianaaxd
 
 ## Contributions
 
 1. Main Landing Page
-   - Coding (by Joash Daligcon)
-   - Pictures (by Joash Daligcon)
-   - Layout (by Aron Limos and Lance Mirano)
-   - Wiki Description (by Joash Daligcon) 
-   - Game Overview (by Aron Limos)
-   - Game History (by Lance Mirano)
-   - Main Gameplay (by Aron Limos)
-   - Competitive Gaming (by Lance Mirano)
-   - All About Esports (by Aron Limos, Joash Daligcon, Lance Mirano)
-   - Classification as Sport (by Aron Limos, Joash Daligcon, Lance Mirano)
-2. Counter-Strike 2 Page (by Lance Mirano)
-3. Dota 2 Page (by Joash Daligcon)
-4. Valorant Page (by Aron Limos)
+   - Coding (by zhoda-lii)
+   - Pictures (by zhoda-lii)
+   - Layout (by AronLimos and kianaaxd)
+   - Wiki Description (by zhoda-lii) 
+   - Game Overview (by AronLimos)
+   - Game History (by kianaaxd)
+   - Main Gameplay (by AronLimos)
+   - Competitive Gaming (by kianaaxd)
+   - All About Esports (by AronLimos, zhoda-lii, kianaaxd)
+   - Classification as Sport (by AronLimos, zhoda-lii, kianaaxd)
+2. Counter-Strike 2 Page (by kianaaxd)
+3. Dota 2 Page (by zhoda-lii)
+4. Valorant Page (by AronLimos)
